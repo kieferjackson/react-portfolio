@@ -1,21 +1,17 @@
-import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
+import Project from './components/Project';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          REACT PORTFOLIO
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Navigation />
+      <Project />
+      <Footer />
     </div>
   );
 }
