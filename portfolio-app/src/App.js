@@ -1,16 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
-import Navigation from './components/Navigation';
-import Project from './components/Project';
+import Page from './components/Page';
 import Footer from './components/Footer';
 
-
 function App() {
+  const [page_view, setPage] = useState('About Me');
+
   return (
     <div>
       <Header />
-      <Navigation />
-      <Project />
+      <Page page_view={page_view} setPage={setPage}/>
       <Footer />
     </div>
   );
