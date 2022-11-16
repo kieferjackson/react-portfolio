@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div>
-      <Header />
-      <Page page_view={page_view} setPage={setPage}/>
+      <Header page_view={page_view} setPage={setPage} />
+      <Page page_view={page_view} setPage={setPage} />
       <Footer />
     </div>
   );

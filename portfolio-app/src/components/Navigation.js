@@ -1,12 +1,18 @@
 import React from 'react';
 
-function Navigation() {
+function Navigation({ page_view, setPage }) {
   return (
     <nav>
       <ul>
-        <li>About Me</li>
-        <li>Portfolio</li>
-        <li>Contact</li>
+        <li>
+            <button type="button" onClick={() => setPage('About Me')}>About Me</button>
+        </li>
+        <li>
+            <button type="button" onClick={() => setPage('Portfolio')}>Portfolio</button>
+        </li>
+        <li>
+            <button type="button" onClick={() => setPage('Contact')}>Contact</button>
+        </li>
       </ul>
     </nav>
   );
