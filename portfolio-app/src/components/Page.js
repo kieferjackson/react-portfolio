@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from './Project';
-import { about_me, projects, contact } from '../utils/page_content';
+import { about_me, projects, contact } from '../utils';
 
 function select_page(page) 
 {
