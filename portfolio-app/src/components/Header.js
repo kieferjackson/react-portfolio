@@ -9,7 +9,12 @@ const styles =
         padding: 20,
         boxShadow: '0px 4px 8px 0px #85858567'
     },
-    h1: { margin: 0 },
+    h1: 
+    { 
+        margin: 0,
+        textAlign: 'center',
+        padding: 20
+    },
 }
 
 function Header({ page_view, setPage }) {
