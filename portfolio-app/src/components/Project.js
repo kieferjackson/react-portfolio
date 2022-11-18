@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 
 function Project({ title, languages_used, website_link, alt_tag, img }) {
-    // Setting state for hovering over elements
+    // Setting state for hovering over projects
     const [isHovered, setHovered] = useState(false);
 
-    // Handling functions for element hovering
+    // Handling functions for project hovering
     const handleMouseEnter = () => setHovered(true);
     const handleMouseLeave = () => setHovered(false);
 
