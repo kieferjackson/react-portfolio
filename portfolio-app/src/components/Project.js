@@ -42,9 +42,6 @@ function Project({ title, languages_used, website_link, alt_tag, img }) {
     return (
         <div className='project_card' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={styles.project_card} key={title}>
             <h3 style={styles.title}>{title}</h3>
-            <ul style={styles.languages_used}>
-                {languages_used.map((language, index) => <li key={index}>{language}</li>)}
-            </ul>
             <a href={website_link} title={website_link}>
                 <img 
                     onMouseEnter={handleMouseEnter}
@@ -55,6 +52,9 @@ function Project({ title, languages_used, website_link, alt_tag, img }) {
                     alt={alt_tag}
                 ></img>
             </a>
+            <ul style={styles.languages_used}>
+                {languages_used.map((language, index) => <li key={index}>{language}</li>)}
+            </ul>
         </div>
     );
 }
