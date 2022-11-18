@@ -3,10 +3,12 @@
 
 :root {
   --glassy-gradient: radial-gradient(at bottom right, #b5e0ddff 0%, #cfccccff 50%, #daddd4ff 75%, #cee2b5ff 100%);
+  --standard-box-shadow: 0px 4px 8px 0px #85858567;
+  --dark-gray: #2c2c2c;
 }
 
 * {
-  color: #2c2c2c;
+  color: var(--dark-gray);
   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
 }
 
@@ -19,16 +21,11 @@ body {
 main {
   box-sizing: border-box;
   width: 80%;
-  min-height: 50vh;
+  min-height: fit-content;
   margin: 0 auto;
   padding: 1% 3%;
-  box-shadow: 0px 4px 8px 0px #85858567;
+  box-shadow: var(--standard-box-shadow);
   background-color: #fff;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 h1, h2, h3 {
