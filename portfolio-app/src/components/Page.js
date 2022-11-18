@@ -31,7 +31,7 @@ function select_page(page)
         case 'Portfolio':
             return (
                 <div className='projects_container'>
-                    {projects.map((project) => <Project {...project} />)}
+                    {projects.map((project) => <Project key={project.title} {...project} />)}
                 </div>
             );
         case 'Contact':
