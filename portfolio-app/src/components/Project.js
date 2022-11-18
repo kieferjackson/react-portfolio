@@ -24,19 +24,20 @@ function Project({ title, languages_used, website_link, alt_tag, img }) {
             // Visual rules
             borderRadius: 15,
             background: 'linear-gradient(0deg, rgb(250, 250, 250) 0%, #fff)',
-            boxShadow: 'inset 0px 3px 6px 0px rgba(131, 131, 131, 0.5)'
+            boxShadow: isHovered 
+                ? 'inset 0px 3px 6px 0px rgba(131, 131, 131, 0.5)'
+                : 'inset 0px 1px 5px 0px rgba(131, 131, 131, 0.4)'
         },
-        title: { borderBottom: '1px solid var(--dark-gray)' },
-        languages_used: { padding: 10 }
+        title: { borderBottom: '1px solid #2c2c2c' },
+        languages_used: { padding: 10 },
+        img:
+        {
+            width: 250,
+            borderRadius: 5,
+            filter: isHovered ? 'blur(0px)' : 'blur(5px)',
+            boxShadow: isHovered ? '0px 4px 8px 0px #85858567' : ''
+        }
     };
-
-    const img_style =
-    {
-        width: 250,
-        borderRadius: 5,
-        filter: isHovered ? 'blur(0px)' : 'blur(5px)',
-        boxShadow: isHovered ? 'var(--standard-box-shadow)' : ''
-    }
 
     return (
         <div className='project_card' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} style={styles.project_card} key={title}>
@@ -49,7 +50,7 @@ function Project({ title, languages_used, website_link, alt_tag, img }) {
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     className="project_preview" 
-                    style={img_style} 
+                    style={styles.img} 
                     src={img} 
                     alt={alt_tag}
                 ></img>
