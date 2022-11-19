@@ -1,10 +1,19 @@
 {
   "files": {
-    "main.js": "/react-portfolio/static/js/main.56dd9f7b.js",
+    "main.css": "/react-portfolio/static/css/main.3af4eaaa.css",
+    "main.js": "/react-portfolio/static/js/main.c9b71d82.js",
+    "static/media/avatar.jpg": "/react-portfolio/static/media/avatar.8e1543d445891588be7d.jpg",
+    "static/media/copoly-calc-preview.PNG": "/react-portfolio/static/media/copoly-calc-preview.2577f9ea0315374600a0.PNG",
+    "static/media/club-pet-preview.png": "/react-portfolio/static/media/club-pet-preview.3e6295eb4d1463b5a415.png",
+    "static/media/placeholder.png": "/react-portfolio/static/media/placeholder.202718f347494510f7ac.png",
+    "static/media/crypto-info-preview.png": "/react-portfolio/static/media/crypto-info-preview.5d94922c0f267ef466f3.png",
+    "static/media/ahpc_logo.png": "/react-portfolio/static/media/ahpc_logo.b123169df06cdf4f6bd4.png",
     "index.html": "/react-portfolio/index.html",
-    "main.56dd9f7b.js.map": "/react-portfolio/static/js/main.56dd9f7b.js.map"
+    "main.3af4eaaa.css.map": "/react-portfolio/static/css/main.3af4eaaa.css.map",
+    "main.c9b71d82.js.map": "/react-portfolio/static/js/main.c9b71d82.js.map"
   },
   "entrypoints": [
-    "static/js/main.56dd9f7b.js"
+    "static/css/main.3af4eaaa.css",
+    "static/js/main.c9b71d82.js"
   ]
 }
