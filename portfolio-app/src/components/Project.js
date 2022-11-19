@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Project({ title, languages_used, website_link, alt_tag, img }) {
+function Project({ title, repo_name, languages_used, website_link, alt_tag, img }) {
     // Setting state for hovering over projects
     const [isHovered, setHovered] = useState(false);
 
@@ -29,7 +29,11 @@ function Project({ title, languages_used, website_link, alt_tag, img }) {
                 : 'inset 0px 1px 5px 0px rgba(131, 131, 131, 0.4)'
         },
         title: { borderBottom: '1px solid #2c2c2c' },
-        languages_used: { padding: 10 },
+        languages_used: 
+        { 
+            padding: 10, 
+            margin: 'auto auto 0px' 
+        },
         img:
         {
             width: 250,
@@ -52,9 +56,15 @@ function Project({ title, languages_used, website_link, alt_tag, img }) {
                     alt={alt_tag}
                 ></img>
             </a>
-            <ul style={styles.languages_used}>
-                {languages_used.map((language, index) => <li key={index}>{language}</li>)}
-            </ul>
+            <aside style={styles.languages_used}>
+                {languages_used.map((language, index) => index === languages_used.length -1 ? `${language}` : `${language} / `)}
+            </aside>
+            <a 
+                href={`https://github.com/kieferjackson/${repo_name}`} 
+                title={`https://github.com/kieferjackson/${repo_name}`}
+            >
+                GitHub Repository
+            </a>
         </div>
     );
 }

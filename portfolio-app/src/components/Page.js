@@ -62,16 +62,27 @@ function select_page(page)
             const PHONE_NUMBER = '(602)-620-6428';
             const EMAIL_ADDRESS = 'kieferleejackson@gmail.com';
 
+            const contact_styles =
+            {
+                contact_info: 
+                { 
+                    textAlign: 'center',
+                    fontSize: 'x-large',
+                    paddingTop: 10,
+                    paddingBottom: 20
+                }
+            }
+
             return (
                 <section key='contact_section' id='contact'>
                     <h2>Contact</h2>
-                    <div className='contact_info'>
+                    <div className='contact_info' style={contact_styles.contact_info}>
                         GitHub: <a href={`https://github.com/${GITHUB_USERNAME}/`}>{GITHUB_USERNAME}</a>
                     </div>
-                    <div className='contact_info'>
+                    <div className='contact_info' style={contact_styles.contact_info}>
                         Phone: {PHONE_NUMBER}
                     </div>
-                    <div className='contact_info'>
+                    <div className='contact_info' style={contact_styles.contact_info}>
                         Email: <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
                     </div>
                 </section>

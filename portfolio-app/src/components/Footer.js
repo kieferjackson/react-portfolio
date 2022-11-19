@@ -3,7 +3,8 @@ import React from 'react';
 const footer_style = 
 {
     padding: 30,
-    textAlign: 'center'
+    textAlign: 'center',
+    fontSize: 'xx-small'
 }
 
 function Footer() {

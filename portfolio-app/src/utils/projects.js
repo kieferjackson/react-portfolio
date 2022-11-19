@@ -7,9 +7,10 @@ import clubpet from './assets/club-pet-preview.png';
 
 class Project 
 {
-    constructor(title, languages_used, website_link, alt_tag, img = placeholder)
+    constructor(title, repo_name, languages_used, website_link, alt_tag, img = placeholder)
     {
         this.title = title;
+        this.repo_name = repo_name;
         this.languages_used = languages_used;
         this.website_link = website_link;
         this.alt_tag = alt_tag;
@@ -20,6 +21,7 @@ class Project
 /**
  * An array of Project objects with the following properties:
  * @property {string} title - The project's title
+ * @property {string} repo_name - The project's GitHub repository name
  * @property {array} languages_used - The programming languages/technologies used in a project
  * @property {string} website_link - URL for the deployed project
  * @property {string} alt_tag - Alt property for a project's given image
@@ -28,7 +30,7 @@ class Project
 const projects = 
 [
     // Copoly Calc
-    new Project("Copoly-Calc", 
+    new Project("Copoly-Calc", 'copoly-calc',
     [
         "HTML",
         "CSS",
@@ -38,7 +40,7 @@ const projects =
     "Copoly-Calc splash page including instructions for minimum user input",
     copolycalc),
     // Advocate Hospice Website
-    new Project("Advocate Hospice Website", 
+    new Project("Advocate Hospice Website", 'ahpc',
     [
         "HTML",
         "CSS",
@@ -48,7 +50,7 @@ const projects =
     "Advocate Hospice and Palliative Care logo",
     ahpc),
     // Crypto-Info
-    new Project("Crypto-Info", 
+    new Project("Crypto-Info", 'crypto-info',
     [
         "HTML",
         "CSS",
@@ -59,7 +61,7 @@ const projects =
     "Logo for Crypto-Info website",
     cryptoinfo),
     // Club Pet
-    new Project("Club Pet", 
+    new Project("Club Pet", 'club-pet',
     [
         "HTML",
         "CSS",
