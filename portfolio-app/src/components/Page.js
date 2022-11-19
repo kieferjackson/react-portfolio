@@ -50,9 +50,9 @@ function select_page(page)
             );
         case 'Portfolio':
             return (
-                <section key='portfolio_section'id='portfolio'>
+                <section key='portfolio_section' id='portfolio'>
                     <h2>Portfolio</h2>
-                    <div className='projects_container'>
+                    <div className='projects_container' style={ { display: 'flex', flexWrap: 'wrap' } }>
                         {projects.map((project) => <Project key={project.title} {...project} />)}
                     </div>
                 </section>

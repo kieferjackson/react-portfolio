@@ -25,30 +25,35 @@ function Navigation({ page_view, setPage }) {
             // Font rules
             fontSize: 'large',
             // Visual Rules
-            backgroundColor: DEFAULT_BG_COLOR,
+            background: DEFAULT_BG_COLOR,
             border: '1px solid #2c2c2c',
             borderRadius: 4,
             cursor: 'pointer'
         }
     };
 
+    // Hover Handlers
     const styleOnHover = (event) => event.target.style.background = '#9b9b9b1e';
     const destyleOnHover = (event) => event.target.style.background = DEFAULT_BG_COLOR;
+    // Page Views
+    const ABOUT_ME_PAGE = 'About Me';
+    const PORTFOLIO_PAGE = 'Portfolio';
+    const CONTACTS_PAGE = 'Contact';
 
     return (
         <div id="page_nav_container" style={styles.container}>
             <nav style={styles.nav}>
                 <button 
                     type="button" style={styles.button} 
-                    onClick={() => setPage('About Me')}
+                    onClick={() => setPage(ABOUT_ME_PAGE)}
                     onMouseEnter={styleOnHover}
                     onMouseLeave={destyleOnHover}
                 >
                     About Me
                 </button>
                 <button 
-                    type="button" style={styles.button} 
-                    onClick={() => setPage('Portfolio')}
+                    type="button" style={styles.button}  
+                    onClick={() => setPage(PORTFOLIO_PAGE)}
                     onMouseEnter={styleOnHover}
                     onMouseLeave={destyleOnHover}
                 >
@@ -56,7 +61,7 @@ function Navigation({ page_view, setPage }) {
                 </button>
                 <button 
                     type="button" style={styles.button} 
-                    onClick={() => setPage('Contact')}
+                    onClick={() => setPage(CONTACTS_PAGE)}
                     onMouseEnter={styleOnHover}
                     onMouseLeave={destyleOnHover}
                 >
