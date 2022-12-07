@@ -60,8 +60,8 @@ function Project({ title, repo_name, languages_used, website_link, alt_tag, img 
                 {languages_used.map((language, index) => index === languages_used.length -1 ? `${language}` : `${language} / `)}
             </aside>
             <a 
-                href={`https://github.com/kieferjackson/${repo_name}`} 
-                title={`https://github.com/kieferjackson/${repo_name}`}
+                href={repo_name} 
+                title={repo_name}
             >
                 GitHub Repository
             </a>

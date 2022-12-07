@@ -4,6 +4,7 @@ import copolycalc from './assets/copoly-calc-preview.PNG';
 import ahpc from './assets/ahpc_logo.png';
 import cryptoinfo from './assets/crypto-info-preview.png';
 import clubpet from './assets/club-pet-preview.png';
+import merchantalchemist from './assets/merchant-alchemist.png';
 
 class Project 
 {
@@ -30,7 +31,8 @@ class Project
 const projects = 
 [
     // Copoly Calc
-    new Project("Copoly-Calc", 'copoly-calc',
+    new Project("Copoly-Calc", 
+    'https://github.com/kieferjackson/copoly-calc',
     [
         "HTML",
         "CSS",
@@ -40,7 +42,8 @@ const projects =
     "Copoly-Calc splash page including instructions for minimum user input",
     copolycalc),
     // Advocate Hospice Website
-    new Project("Advocate Hospice Website", 'ahpc',
+    new Project("Advocate Hospice Website", 
+    'https://github.com/kieferjackson/ahpc',
     [
         "HTML",
         "CSS",
@@ -50,7 +53,8 @@ const projects =
     "Advocate Hospice and Palliative Care logo",
     ahpc),
     // Crypto-Info
-    new Project("Crypto-Info", 'crypto-info',
+    new Project("Crypto-Info", 
+    'https://github.com/kieferjackson/crypto-info',
     [
         "HTML",
         "CSS",
@@ -61,7 +65,8 @@ const projects =
     "Logo for Crypto-Info website",
     cryptoinfo),
     // Club Pet
-    new Project("Club Pet", 'club-pet',
+    new Project("Club Pet", 
+    'https://github.com/kieferjackson/club-pet',
     [
         "HTML",
         "CSS",
@@ -72,7 +77,21 @@ const projects =
     ],
     "https://club-pet.herokuapp.com/",
     "Showing two pets of a user: King (male panda bear) and Cosmos (female dog)",
-    clubpet)
+    clubpet),
+    // Merchant Alchemist
+    new Project("Merchant Alchemist", 
+    'https://github.com/lucasz10/merchant-alchemist',
+    [
+        "React",
+        "CSS",
+        "Bootstrap",
+        "Express",
+        "MongoDB",
+        "JWT"
+    ],
+    "https://merchant-alchemist.herokuapp.com/",
+    `Title screen of the game with game's title, and an "Enter here" button`,
+    merchantalchemist)
 ];
 
 export { projects };
